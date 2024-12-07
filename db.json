@@ -9,7 +9,7 @@
     "category": "faucet",
     "categoryRus": "смесители",
     "quantity": 44,
-    "images_slider": [],
+    "images_slider": ["xzsiuabi7zd6nwh4j2ik7v2enq299atg.webp"],
     "img_src": "xzsiuabi7zd6nwh4j2ik7v2enq299atg.webp",
     "hit": "",
     "price": "22 100₽",
@@ -55,7 +55,7 @@
     "category": "faucet",
     "categoryRus": "смесители",
     "quantity": 7,
-    "images_slider": [],
+    "images_slider": ["sddzzbla3sy7dwxs22z0qxq8l1i8dp63.webp"],
     "img_src": "sddzzbla3sy7dwxs22z0qxq8l1i8dp63.webp",
     "hit": "",
     "price": "63 100₽",
@@ -104,8 +104,8 @@
     "quantity": 25,
     "images_slider": [
       "dnv8iodb9oz79y00kk9eahth0xjr0cr9.webp",
-      "/upload/resize_cache/webp/iblock/a6e/okr5kz7eota0lz35rnpeffg0p325rez7.webp",
-      "/upload/resize_cache/webp/iblock/45b/pb12j33gogyzvds2qrpmt80fzllom6y8.webp"
+      "okr5kz7eota0lz35rnpeffg0p325rez7.webp",
+      "pb12j33gogyzvds2qrpmt80fzllom6y8.webp"
     ],
     "img_src": "dnv8iodb9oz79y00kk9eahth0xjr0cr9.webp",
     "hit": "",
@@ -280,7 +280,7 @@
     "quantity": 0,
     "images_slider": [
       "7vmvjdwim9ulvbe9ky90g5z8n4bzgc5z.webp",
-      "/upload/resize_cache/webp/iblock/718/ho30dcgoplg37jpo8a4nvdtftss8socw.webp"
+      "ho30dcgoplg37jpo8a4nvdtftss8socw.webp"
     ],
     "img_src": "7vmvjdwim9ulvbe9ky90g5z8n4bzgc5z.webp",
     "hit": "",
@@ -372,9 +372,10 @@
     "quantity": 40,
     "images_slider": [
       "i03xpt00c6xsbgpldmq4073zw7jx1ham.webp",
-      "/upload/resize_cache/webp/iblock/fe2/w7ryr0ft1poctatfa04xamy3f10c9s2c.webp",
-      "/upload/resize_cache/webp/iblock/9ca/xawavy5ec7t2w9d2a0p9f8ohitasdldh.webp",
-      "/upload/resize_cache/webp/iblock/d17/iyw7697cx6mz9ke4mdtop6oqxkiv7un6.webp"
+      "w7ryr0ft1poctatfa04xamy3f10c9s2c.webp",
+      "i03xpt00c6xsbgpldmq4073zw7jx1ham.webp",
+      "xawavy5ec7t2w9d2a0p9f8ohitasdldh.webp",
+      "iyw7697cx6mz9ke4mdtop6oqxkiv7un6.webp"
     ],
     "img_src": "i03xpt00c6xsbgpldmq4073zw7jx1ham.webp",
     "hit": "",
@@ -552,7 +553,7 @@
     "quantity": 64,
     "images_slider": [
       "n4w357upnbmfwdteihsrllv7d5vb2r7d.webp",
-      "/upload/resize_cache/webp/iblock/bf0/4ukvx6u6jahxegij0bcndfw2geufi7os.webp"
+      "4ukvx6u6jahxegij0bcndfw2geufi7os.webp"
     ],
     "img_src": "n4w357upnbmfwdteihsrllv7d5vb2r7d.webp",
     "hit": "Хит",
