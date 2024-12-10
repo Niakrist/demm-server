@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1733742219-cr",
+    "title": "Излив на ванну настенный 19см slash - хром",
+    "color": { "cr": "хром" },
+    "availability": "Есть в наличии",
+    "category": "outpourings",
+    "categoryRus": "Изливы",
+    "montage": "настенный",
+    "collection": "SLASH",
+    "quantity": 8,
+    "images_slider": ["rofikabeva4q3rvguvqso2jurphchko1.webp"],
+    "img_src": "rofikabeva4q3rvguvqso2jurphchko1.webp",
+    "hit": "",
+    "price": "15 290₽",
+    "description": [],
+    "colorsArr": {
+      "cr": "хром",
+      "np": "никель брашированный",
+      "xv": "никелированная сталь"
+    },
+    "characteristic": {
+      "цвет покрытия": "cr хром",
+      "производитель": "REMER",
+      "cтрана производитель": "Италия",
+      "гарантия лет": "5",
+      "montage": "настенный",
+      "единица измерения": "штука",
+      "коллекция": "SLASH"
+    }
+  },
+  {
+    "id": "1733742219-np",
+    "title": "Излив на ванну настенный 19см slash - никель брашированный",
+    "color": { "np": "никель брашированный" },
+    "availability": "Нет в наличии",
+    "category": "outpourings",
+    "categoryRus": "Изливы",
+    "montage": "настенный",
+    "collection": "SLASH",
+    "quantity": 0,
+    "images_slider": ["rofikabeva4q3rvguvqso2jurphchko1.webp"],
+    "img_src": "rofikabeva4q3rvguvqso2jurphchko1.webp",
+    "hit": "",
+    "price": "27 330₽",
+    "description": [],
+    "colorsArr": {
+      "cr": "хром",
+      "np": "никель брашированный",
+      "xv": "никелированная сталь"
+    },
+    "characteristic": {
+      "цвет покрытия": "np никель брашированный",
+      "производитель": "REMER",
+      "cтрана производитель": "Италия",
+      "гарантия лет": "5",
+      "montage": "настенный",
+      "единица измерения": "штука",
+      "коллекция": "SLASH"
+    }
+  },
+  {
+    "id": "1733742219-xv",
+    "title": "Излив на ванну настенный 19см slash - никелированная сталь",
+    "color": { "xv": "никелированная сталь" },
+    "availability": "Есть в наличии",
+    "category": "outpourings",
+    "categoryRus": "Изливы",
+    "montage": "настенный",
+    "collection": "SLASH",
+    "quantity": 6,
+    "images_slider": ["rofikabeva4q3rvguvqso2jurphchko1.webp"],
+    "img_src": "rofikabeva4q3rvguvqso2jurphchko1.webp",
+    "hit": "",
+    "price": "24 500₽",
+    "description": [],
+    "colorsArr": {
+      "cr": "хром",
+      "np": "никель брашированный",
+      "xv": "никелированная сталь"
+    },
+    "characteristic": {
+      "цвет покрытия": "xv никелированная сталь",
+      "производитель": "REMER",
+      "cтрана производитель": "Италия",
+      "гарантия лет": "5",
+      "montage": "настенный",
+      "единица измерения": "штука",
+      "коллекция": "SLASH"
+    }
+  }
+]
