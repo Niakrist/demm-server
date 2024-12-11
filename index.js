@@ -99,6 +99,11 @@ function getGoodsList(params = {}) {
     data = data.filter((item) => params.color?.includes(item.color));
   }
 
+  if (params.collection) {
+    data = data.filter((item) => params.collection?.includes(item.collection));
+  }
+
+
   if (params.minprice) {
     data = data.filter((item) => params.minprice <= item.price);
   }
