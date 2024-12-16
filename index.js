@@ -98,6 +98,9 @@ function getGoodsList(params = {}) {
   if (params.color) {
     data = data.filter((item) => params.color?.includes(item.color));
   }
+    if (params.montage) {
+    data = data.filter((item) => params.montage?.includes(item.montage));
+  }
 
   if (params.collection) {
     data = data.filter((item) => params.collection?.includes(item.collection));
@@ -144,8 +147,49 @@ function getCategory() {
   for (let i = 0; i < goods.length; i++) {
     category[goods[i].category] = goods[i].categoryRus;
   }
-
   return category;
+}
+
+function getColors() {
+    const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
+  const colors = {};
+
+  for (let i = 0; i < goods.length; i++) {
+    colors[goods[i].color] = goods[i].colorsArr[goods[i].color];
+  }
+  return colors;
+}
+
+function getCollections() {
+  const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
+  const collections = {};
+  
+
+  for (let i = 0; i < goods.length; i++) {
+    if (goods[i].collection) {
+    collections[goods[i].collection] = goods[i].collection;
+    }
+  }
+  return collections;
+}
+
+function getMontage() {
+  const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
+  const montage = {};
+
+  for (let i = 0; i < goods.length; i++) {
+    montage[goods[i].montage] = goods[i].montage;
+  }
+  return montage;
+}
+
+function getType() {
+  const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
+  const types = {};
+    for (let i = 0; i < goods.length; i++) {
+    types[goods[i].type] = goods[i].type;
+  }
+  return types;
 }
 
 // создаём HTTP сервер, переданная функция будет реагировать на все запросы к нему
@@ -180,6 +224,37 @@ module.exports = server = createServer(async (req, res) => {
   if (req.url.includes("/api/category")) {
     const body = await (async () => {
       if (req.method === "GET") return getCategory();
+    })();
+    res.end(JSON.stringify(body));
+    return;
+  }
+
+    if (req.url.includes("/api/colors")) {
+    const body = await (async () => {
+      if (req.method === "GET") return getColors();
+    })();
+    res.end(JSON.stringify(body));
+    return;
+  }
+  if (req.url.includes("/api/collections")) {
+    const body = await (async () => {
+      if (req.method === "GET") return getCollections();
+    })();
+    res.end(JSON.stringify(body));
+    return;
+  }
+
+  if (req.url.includes("/api/montage")) {
+    const body = await (async () => {
+      if (req.method === "GET") return getMontage();
+    })();
+    res.end(JSON.stringify(body));
+    return;
+  }
+
+  if (req.url.includes("/api/type")) {
+    const body = await (async () => {
+      if (req.method === "GET") return getType();
     })();
     res.end(JSON.stringify(body));
     return;
