@@ -98,14 +98,16 @@ function getGoodsList(params = {}) {
   if (params.color) {
     data = data.filter((item) => params.color?.includes(item.color));
   }
-    if (params.montage) {
+  if (params.montage) {
     data = data.filter((item) => params.montage?.includes(item.montage));
   }
 
   if (params.collection) {
     data = data.filter((item) => params.collection?.includes(item.collection));
   }
-
+  if (params.price) {
+    data = data.filter((item) => params.price?.includes(item.price));
+  }
 
   if (params.minprice) {
     data = data.filter((item) => params.minprice <= item.price);
@@ -151,7 +153,7 @@ function getCategory() {
 }
 
 function getColors() {
-    const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
+  const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
   const colors = {};
 
   for (let i = 0; i < goods.length; i++) {
@@ -163,11 +165,10 @@ function getColors() {
 function getCollections() {
   const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
   const collections = {};
-  
 
   for (let i = 0; i < goods.length; i++) {
     if (goods[i].collection) {
-    collections[goods[i].collection] = goods[i].collection;
+      collections[goods[i].collection] = goods[i].collection;
     }
   }
   return collections;
@@ -186,10 +187,19 @@ function getMontage() {
 function getType() {
   const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
   const types = {};
-    for (let i = 0; i < goods.length; i++) {
+  for (let i = 0; i < goods.length; i++) {
     types[goods[i].type] = goods[i].type;
   }
   return types;
+}
+
+function getPrice() {
+  const goods = JSON.parse(readFileSync(DB_FILE) || "[]");
+  const prices = [];
+  for (let i = 0; i < goods.length; i++) {
+    prices.push(goods[i].price);
+  }
+  return prices;
 }
 
 // создаём HTTP сервер, переданная функция будет реагировать на все запросы к нему
@@ -229,7 +239,7 @@ module.exports = server = createServer(async (req, res) => {
     return;
   }
 
-    if (req.url.includes("/api/colors")) {
+  if (req.url.includes("/api/colors")) {
     const body = await (async () => {
       if (req.method === "GET") return getColors();
     })();
@@ -255,6 +265,13 @@ module.exports = server = createServer(async (req, res) => {
   if (req.url.includes("/api/type")) {
     const body = await (async () => {
       if (req.method === "GET") return getType();
+    })();
+    res.end(JSON.stringify(body));
+    return;
+  }
+  if (req.url.includes("/api/prices")) {
+    const body = await (async () => {
+      if (req.method === "GET") return getPrice();
     })();
     res.end(JSON.stringify(body));
     return;
